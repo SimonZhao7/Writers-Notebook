@@ -5,20 +5,18 @@ export const Accordion = () => {
     const [open, setOpen] = useState(false)
     
     return (
-        <article className='bg-white w-full rounded-[10px] border-box transition-["height"] duration-100 ease-out'>
+        <article className='bg-white w-full rounded-md xl:rounded-[10px] border-box transition-[height] duration-200 ease-out'>
             <div
-                className='max-h-[100px]  px-10 py-8 flex justify-between items-center'
+                className='h-12 px-6 flex justify-between items-center sm:h-16 sm:px-10 2xl:h-20'
                 onClick={() => setOpen(!open)}
             >
-                <p>1. Placeholder</p>
+                <p className='accordion-text'>1. Placeholder</p>
                 {open ? <BsChevronUp size={25} /> : <BsChevronDown size={25} />}
             </div>
             <div
-                className={`h-${
-                    open ? '60' : '0'
-                } transition-all duration-200 px-10 overflow-hidden`}
+                className={`${open ? 'max-h-screen' : 'max-h-0'} h-[300px] transition-all duration-200 px-6 overflow-hidden sm:px-10`}
             >
-                <p>Placeholder Details</p>
+                <p className='accordion-text'>Placeholder Details</p>
             </div>
         </article>
     )

@@ -7,3 +7,9 @@
 html, body, #root {
     height: 100%;
 }
+
+@layer base {
+    .accordion-text {
+        @apply text-xs sm:text-sm;
+    }
+}
