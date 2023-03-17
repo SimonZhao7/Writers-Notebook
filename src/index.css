@@ -4,12 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-    height: 100%;
-}
-
 @layer base {
+    html, body, #root {
+        height: 100%;
+        @apply bg-n-red;
+    }
+
     .accordion-text {
-        @apply text-xs sm:text-sm;
+        @apply text-xs sm:text-[16px];
     }
 }
