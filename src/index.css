@@ -11,6 +11,6 @@
     }
 
     .accordion-text {
-        @apply text-xs sm:text-[16px];
+        @apply text-xs sm:text-[16px] 2xl:text-xl;
     }
 }
