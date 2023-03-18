@@ -79,9 +79,9 @@ export const FilterModal = ({
                     </p>
                 </div>
                 <section className='flex flex-wrap gap-2'>
-                    {selected.map((c: Category, index: number) => (
+                    {selected.map((c: Category) => (
                         <div
-                            key={index}
+                            key={c.id}
                             className='py-1 px-4 bg-l-red text-sm rounded-full text-white group relative'
                         >
                             <div
