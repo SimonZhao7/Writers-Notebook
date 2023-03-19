@@ -35,7 +35,7 @@ export const Accordion = ({
             </div>
             <div
                 className={`${
-                    open ? 'max-h-screen' : 'max-h-0'
+                    open ? 'max-h-screen overflow-y-scroll' : 'max-h-0'
                 } transition-["height"] duration-300 ease-out px-6 overflow-hidden sm:px-10`}
             >
                 <section className='flex justify-end items-center pt-5 pb-3'>
