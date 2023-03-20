@@ -30,7 +30,7 @@ function App() {
                     setFilters={setFilters}
                 />
             )}
-            <header className='bg-d-red w-full h-[20px] px-3 flex items-center justify-end xl:h-[40px] 2xl:h-[60px]'>
+            <header className='bg-d-red w-full px-3 flex items-center justify-end h-[40px] 2xl:h-[60px]'>
                 <a href='https://github.com/SimonZhao7/Writers-Notebook'>
                     <AiFillGithub
                         className='w-[30px] h-[30px] 2xl:w-[45px] 2xl:h-[45px] hover:cursor-pointer hover:scale-110 transition-transform'
